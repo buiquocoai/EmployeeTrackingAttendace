@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tanit.natlmobileservice"
+    android:versionCode="1"
+    android:versionName="1.0" android:installLocation="preferExternal">
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="17" />	
+	<uses-permission android:name="android.permission.INTERNET"/>    	  		
+	<uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+	
+    <application
+        android:allowBackup="false"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Animation" android:killAfterRestore="true">
+        <activity
+            android:name="com.tanit.natlmobileservice.MainActivity"
+            android:label="@string/app_name" 
+            android:alwaysRetainTaskState="false" android:finishOnCloseSystemDialogs="true" android:launchMode="singleInstance" android:theme="@android:style/Animation">            
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tanit.natlmobileservice.CrushingActivity"
+            android:label="@string/app_name" android:launchMode="singleInstance" android:theme="@android:style/Animation">
+			<meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.tanit.natlmobileservice.MainActivity" />            
+        </activity>
+        <activity
+            android:name="com.tanit.natlmobileservice.SISActivity"
+            android:label="@string/app_name" android:launchMode="singleInstance" android:theme="@android:style/Animation">
+			<meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.tanit.natlmobileservice.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>

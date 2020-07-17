@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">NATL Mobile Service</string>
+    <string name="lable_sis_info">Sugar Sales and Inventory Info</string>
+    <string name="lable_crushing_info">Cane Crushing Info</string>
+    <string name="lab_number_of_day">Number of day in past:</string>
+    <string name="txt_num_of_day_default">0</string>
+    <string name="cmd_cru_get_data_caption">View Statistic</string>
+    <string name="lbl_cru_statistic_data"></string>
+    <string name="txt_num_of_day_hint">Enter a number</string>
+    <string name="main_cmdcru_caption">Cane Crushing Activity</string>
+    <string name="main_cmdsis_caption">SIS Activity</string>
+    <string name="main_cmdexit_caption">Exit</string>
+    <string name="lable_author_message">Developed by: Nguyen Duy Tan - ©-2013</string>
+    <string name="lable_hello_owner"></string>
+    <string name="lbl_sis_statistic_message"></string>
+
+</resources>

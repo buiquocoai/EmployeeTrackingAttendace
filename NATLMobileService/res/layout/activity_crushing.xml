@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".CrushingActivity" >
+
+    <TextView
+        android:id="@+id/lbl_sis_statistic_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/lable_crushing_info"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/cmd_cru_get_data"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/Layout1"
+        android:layout_below="@+id/Layout1"
+        android:onClick="cmdCruGetDataClick"        
+        android:text="@string/cmd_cru_get_data_caption" />
+
+    <LinearLayout
+        android:id="@+id/Layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lbl_sis_statistic_message"
+        android:layout_below="@+id/lbl_sis_statistic_message"
+        android:layout_marginTop="15dp" >
+
+        <TextView
+            android:id="@+id/lable_hello_owner_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lab_number_of_day"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <EditText
+            android:id="@+id/txt_num_of_day"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/txt_num_of_day_hint"
+            android:inputType="numberSigned"
+            android:text="@string/txt_num_of_day_default" />
+
+    </LinearLayout>
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cmd_cru_get_data"
+        android:layout_below="@+id/cmd_cru_get_data"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/lbl_cru_statistic_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_cru_statistic_data"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    </TableRow>
+
+</RelativeLayout>
